@@ -9,4 +9,4 @@ class Burger:
     toppings: list[str] = None
 
     def __str__(self):
-        return f"{self.bread} {self.patty} {self.sauce or 'No sauce'} {self.toppings or 'No toppings'} "
+        return f"{self.bread} {self.patty} {self.sauce or 'no sauce'} {self.toppings or 'no toppings'} "
