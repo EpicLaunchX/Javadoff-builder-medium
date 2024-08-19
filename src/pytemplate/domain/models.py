@@ -5,7 +5,7 @@ from dataclasses import dataclass
 class Burger:
     bread: str
     patty: str
-    sauce: [str] = None
+    sauce: list[str] = None
     toppings: list[str] = None
 
     def __str__(self):
