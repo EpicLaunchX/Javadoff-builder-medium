@@ -13,7 +13,7 @@ class Burger:
     toppings: list[str] | None = None
 
     def __str__(self):
-        return f"{self.bread} {self.patty} {self.sauce or 'no sauce'} {self.toppings or 'no toppings'} "
+        return f"{self.bread} {self.patty} {self.sauce if self.sauce else 'no sauce'} { ','.join(self.toppings) if self.toppings else 'no toppings'}"
 
 
 def burger_factory(data: dict) -> Burger:
